@@ -9,30 +9,46 @@ This repository contains materials for a project focused on detecting hate speec
 - **Hate Speech Project.pdf**: A PDF document outlining the project's objectives, methodology, and results.
 - **twitter-hate-speech-metadata.json**: Metadata for the Twitter hate speech dataset.
 
-## Files Description
+## Technology
 
-### DataSet
+- **PyTorch GPU**
+- **Azure**
 
-The `DataSet` directory includes all the data files necessary for training and evaluating the hate speech detection model. Make sure to explore the data to understand its structure and features.
+## Introduction
 
-### Data_Summary.ipynb
+In this project, we aim to tackle the problem of hate speech detection using various machine learning approaches. Specifically, we will implement and compare two models:
 
-The `Data_Summary.ipynb` Jupyter Notebook provides a detailed analysis of the dataset. It includes data cleaning, preprocessing steps, exploratory data analysis (EDA), and visualizations that help understand the distribution and characteristics of the data.
+- **NanoGPT**
+- **xLSTM (Extended Long Short-Term Memory)**
 
-### Hate Speech Project.pdf
+We will train these models and compare their performance against state-of-the-art pre-trained models such as GPT, BERT, and ILAMA.
 
-The `Hate Speech Project.pdf` document presents a comprehensive overview of the project. It covers the following sections:
-- Introduction
-- Objectives
-- Methodology
-- Model Architecture
-- Results and Discussion
-- Conclusion
-- Future Work
+## Objective
 
-### twitter-hate-speech-metadata.json
+The primary objective is to develop lightweight models that require significantly less memory and computational power, making them suitable for deployment on devices with limited resources like smartphones and tablets.
 
-The `twitter-hate-speech-metadata.json` file contains metadata for the Twitter hate speech dataset. It includes information about the data collection process, data sources, and annotations.
+## Business Understanding
+
+### Background
+
+Hate speech on social media platforms and other online forums is a growing concern. Detecting and mitigating such harmful content is crucial to maintaining a safe and inclusive digital environment. Traditional large language models (LLMs) like GPT, BERT, and ILAMA are highly effective but require significant computational resources, making them impractical for deployment on resource-constrained devices.
+
+### Goal
+
+Our goal is to create efficient and lightweight models for hate speech detection that can be deployed on low-resource devices. This will enable real-time detection and filtering of harmful content without the need for powerful computational infrastructure.
+
+In addition to efficiency, another aim is to build models with bespoke architectures that are relatively simple. These models should be easy to adjust to different platforms and scalable through parallelization. This flexibility will ensure that the models can be adapted for various deployment environments, enhancing their utility and longevity.
+
+For future development beyond this project, the model should also be designed to accommodate not only language data but also visual data enriched by physical reality. This extension will involve integrating neural operators to handle continuous data and complex dependencies across different data modalities. By doing so, we aim to create a comprehensive solution capable of processing and understanding multi-modal data inputs, paving the way for more sophisticated applications.
+
+## Benefits
+
+- **Accessibility**: Enable hate speech detection on a wider range of devices, including smartphones and tablets.
+- **Cost-Efficiency**: Reduce the need for expensive computational resources, making the technology more accessible to smaller organizations and developers.
+- **Scalability**: Facilitate the deployment of models in resource-constrained environments, allowing for wider adoption and impact.
+- **Real-Time Processing**: Allow for the real-time detection and mitigation of hate speech, enhancing the user experience and safety on digital platforms.
+- **Flexibility**: The bespoke architecture ensures the model can be easily adjusted to different platforms, improving adaptability and deployment efficiency.
+- **Future-Proofing**: The capability to integrate neural operators for handling both language and visual data ensures the model remains relevant and expandable for future applications involving multi-modal data inputs.
 
 ## Getting Started
 
@@ -60,6 +76,7 @@ Contributions to this project are welcome. If you have any suggestions, bug repo
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
 
 
 
